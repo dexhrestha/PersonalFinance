@@ -1,0 +1,13 @@
+.env
+notebooks/
+output/
+scripts/
+src/
+temp/
+test_pdf/
+upload_to_drive/
+uploads/
+credentials/
+enriched/
+__pycache__/
+
