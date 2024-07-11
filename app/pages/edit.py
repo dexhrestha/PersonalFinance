@@ -10,7 +10,7 @@ g_client = Drive(token_path='credentials/g_token.pickle', cred_path='credentials
 OPTIONS = [
     'Bills', 'Rent', 'Eating out', 'Shopping', 'Transport', 'Groceries', 'Entertainment',
     'Health & Beauty', 'Home & Garden', 'Other', 'Uncategorized', 'Income', 'Transfers',
-    'Investment', 'Savings', 'Loan', 'Study','Leisure'
+    'Investment', 'Savings', 'Loan', 'Study'
 ]
 
 # Streamlit app

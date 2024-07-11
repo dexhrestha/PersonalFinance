@@ -29,7 +29,8 @@ class Drive():
 
         # If credentials are not available or invalid, perform manual authentication
         if not gauth.credentials or gauth.credentials.invalid:
-            gauth.LocalWebserverAuth(port_numbers=[self.port])  # This will open a new window/tab in your default browser for authentication
+            # gauth.LocalWebserverAuth(port_numbers=[self.port])  # This will open a new window/tab in your default browser for authentication
+            gauth.LocalWebserverAuth()
 
             # Save the credentials for the next run
             with open(self.token_path, 'wb') as token:

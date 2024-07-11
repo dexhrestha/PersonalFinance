@@ -16,10 +16,10 @@ connection_string = f"postgresql+psycopg2://{POSTGRES_USER}:{POSTGRES_PASSWORD}@
 # Create an engine
 engine = create_engine(connection_string)
 
-# Define a query to load data
+# # Define a query to load data
 query = f"SELECT * FROM statements_raw.lloyds_raw"  # Replace 'your_table_name' with your actual table name
 
-# Load data into a pandas DataFrame
+# # Load data into a pandas DataFrame
 df = pd.read_sql(query, engine)
 
 

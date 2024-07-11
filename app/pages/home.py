@@ -8,6 +8,10 @@ import os
 from utils.drive_functions import Drive
 from api.create_connection import df
 
+from google.oauth2 import id_token
+from google.auth.transport import requests
+
+
 
 st.title("Personal Finance Dashboard")
 
@@ -23,6 +27,7 @@ def login():
 
 if not os.path.exists('credentials/g_token.pickle'):
     st.button("Login With Google",on_click=login)
+
 
 st.markdown("""
 Take control of your financial journey with our powerful and intuitive personal finance dashboard. Whether you're saving for a dream vacation, planning for retirement, or simply managing day-to-day expenses, our tools are designed to empower you every step of the way.
